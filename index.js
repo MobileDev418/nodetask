@@ -25,13 +25,17 @@
 //           }
 //       }
 //   }
+//   if(result.length > 1) {
+//       return "error";
+//   } else {
+//       return result.pop();
+//   }
 // }
+
 // console.log(notation("5 2 + 3 *"));
 // console.log(notation("5 2 * 2 * 4 +"));
 // console.log(notation("5"));
 // console.log(notation("0 1 *"));
-
-
 
 /// Task 2
 /**
@@ -39,7 +43,7 @@
  * Write an arrow function that rotate the matrix by 90 degress (clockwise).
  */
 
- // Input value
+// Input value
 var grid = [
   [1, 2, 3],
   [4, 5, 6],
@@ -58,5 +62,5 @@ let rotate = matrix => {
   return matrix;
 }
 
-// put
+// output value
 console.log(JSON.stringify(rotate(grid)));
