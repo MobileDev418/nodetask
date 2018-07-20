@@ -37,8 +37,53 @@
 // console.log("5 =>", notation("5"));
 // console.log("0 1 * =>", notation("0 1 *"));
 
-
+// -----------------------------------
 // // Using reverse-polish-notation npm
 // var rpn = require('reverse-polish-notation')
 
 // console.log(rpn('5 1 2 + 4 * + 3 -')) // prints "14"
+
+/*************************************** */
+const notation = function(postfix) {
+  var result = [];
+  postfix = postfix.split(" ");
+
+    postfix.forEach(element => {
+        if(element != "+" && element != "*" && element != "-" && element != "/" && element != "=>") {
+            result.push(element);
+        } else {
+            var a = result.pop();
+            var b = result.pop();
+            if(element === "+") {
+                result.push(parseInt(a) + parseInt(b));
+            } else if(element === "-") {
+                result.push(parseInt(b) - parseInt(a));
+            } else if(element === "*") {
+                result.push(parseInt(a) * parseInt(b));
+            } else if(element === "/") {
+                result.push(parseInt(b) / parseInt(a));
+            } else if(element === "^") {
+                result.push(Math.pow(parseInt(b), parseInt(a)));
+            }
+        }
+    });
+
+    if(result.length > 1) {
+        return "error";
+    } else {
+        return result.pop();
+    }
+}
+
+console.log(notation("5 2 + 3 *"));
+console.log(notation("5 2 * 2 * 4 +"));
+console.log(notation("5"));
+console.log(notation("0 1 *"));
+
+// let arr = ["Hello", "World", "Testing"];
+
+// arr.map( one => one.toUpperCase())
+//     .filter(one => one.length <= 5)
+//     .reduce((acc, curr) => acc + curr + ' ', '');
+    
+// console.log();
