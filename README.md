@@ -41,3 +41,23 @@ Output:
   [9, 6, 3],
 ] 
 
+### Airbnb Coding Style in Node.js
+```sh
+npm install eslint
+npx install-peerdeps --dev eslint-config-airbnb
+```
+
+Create .eslintrc on your project directory
+then Add
+{ "extends": "airbnb" }
+
+In the Package.json file, change as following:
+"script": { ...
+    "lint":"eslint ."
+}
+
+```sh
+npm run lint
+```
+
+.......................
