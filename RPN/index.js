@@ -36,3 +36,9 @@
 // console.log("5 2 * 2 * 4 + =>", notation("5 2 * 2 * 4 +"));
 // console.log("5 =>", notation("5"));
 // console.log("0 1 * =>", notation("0 1 *"));
+
+
+// // Using reverse-polish-notation npm
+// var rpn = require('reverse-polish-notation')
+
+// console.log(rpn('5 1 2 + 4 * + 3 -')) // prints "14"
