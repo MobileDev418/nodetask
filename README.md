@@ -2,9 +2,7 @@
 
 ## 1. 
 
-### Devise a function that, given a string containing an expression in Reverse Polish notation, evaluates that expression,
-returning the result. Reverse Polish notation is a mathematical notation in which every operator follows all of its operands.
-There is no notion of operator precedence. Instead, the expression is evaluated left to right. Some examples follow:
+### Devise a function that, given a string containing an expression in Reverse Polish notation, evaluates that expression, returning the result. Reverse Polish notation is a mathematical notation in which every operator follows all of its operands. There is no notion of operator precedence. Instead, the expression is evaluated left to right. Some examples follow:
 
 2 1 + => 3
 5 5 + 3 * => 10 3 * => 30
@@ -22,8 +20,7 @@ Test cases:
 
 ## 2. 
 
-### You are given an n x n 2D matrix. Rotate the matrix by 90 degrees (clockwise).
-Write an arrow function that rotate the matrix by 90 degrees (clockwise).
+### You are given an n x n 2D matrix. Rotate the matrix by 90 degrees (clockwise). Write an arrow function that rotate the matrix by 90 degrees (clockwise).
 Example:
 Input:
 [
