@@ -1,6 +1,6 @@
 # nodetask
 
-## 1. 
+## RPN for test using mocha. 
 
 ### Devise a function that, given a string containing an expression in Reverse Polish notation, evaluates that expression, returning the result. Reverse Polish notation is a mathematical notation in which every operator follows all of its operands. There is no notion of operator precedence. Instead, the expression is evaluated left to right. Some examples follow:
 
@@ -21,8 +21,15 @@ Test cases:
 
 "0 1 *" => 0
 
+============= Test ============
 
-## 2. 
+```sh
+npm install mocha
+node test.js
+```
+
+
+## RotateMatrix for coding style using airbnb eslint.
 
 ### You are given an n x n 2D matrix. Rotate the matrix by 90 degrees (clockwise). Write an arrow function that rotate the matrix by 90 degrees (clockwise).
 Example:
