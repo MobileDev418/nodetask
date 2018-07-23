@@ -56,13 +56,15 @@ npx install-peerdeps --dev eslint-config-airbnb
 
 Create .eslintrc on your project directory
 then Add
-```sh{ "extends": "airbnb" }```
+```{ "extends": "airbnb" }```
 
 In the Package.json file, change as following:
-```sh"script": { ...
+```sh
+"script": { ...
     "lint":"eslint ."
-}```
-
+}
+```
+then, run as following command:
 ```sh
 npm run lint
 ```
