@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "test": "mocha -R spec --recursive"
+    "lint": "eslint ."
   },
   "author": "",
   "license": "ISC",
