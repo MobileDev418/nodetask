@@ -47,9 +47,13 @@
 
 // console.log(rpn('5 1 2 + 4 * + 3 -')) // prints "14"
 
-const notation = function (postfix) {
+module.exports = function (postfix) {
+
+  if ( postfix === '' )
+    return null;
+
   const result = [];
-  const postfix1 = postfix.split(' ');
+  const postfix1 = postfix.split(/\s+/);
 
   postfix1.forEach((element) => {
     if (element !== '+' && element !== '*' && element !== '-' && element !== '/' && element !== '=>') {
@@ -70,19 +74,16 @@ const notation = function (postfix) {
   });
 
   if (result.length > 1) {
-    return 'error';
+    return null;
   }
   return result.pop();
 };
 
-console.log(notation('5 2 + 3 *'));
-console.log(notation('5 2 * 2 * 4 +'));
-console.log(notation('5'));
-console.log(notation('0 1 *'));
+
+// Array functions example .map, .filter, .reduce .forEach
 
 // let arr = ["Hello", "World", "Testing"];
-
+// 
 // arr.map( one => one.toUpperCase())
 //     .filter(one => one.length <= 5)
 //     .reduce((acc, curr) => acc + curr + ' ', '');
-// console.log();
