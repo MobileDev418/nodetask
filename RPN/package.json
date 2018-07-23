@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -R spec --recursive"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "mocha": "^5.2.0",
     "reverse-polish-notation": "^0.1.0"
   },
   "devDependencies": {
