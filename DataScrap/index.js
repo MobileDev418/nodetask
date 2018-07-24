@@ -17,7 +17,7 @@ const writeFile = (path, content) => new Promise((resolve, reject) => {
     if (error) {
       reject(error);
     }
-    resolve();
+    resolve('done');
   });
 });
 
