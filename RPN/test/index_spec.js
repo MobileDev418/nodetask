@@ -1,5 +1,5 @@
 var assert = require('assert')
-var rpn = require('../')
+var rpn = require('../').default
 
 describe('Reverse Polish Notation Test', function() {
 
@@ -10,6 +10,5 @@ describe('Reverse Polish Notation Test', function() {
       assert.equal(rpn('4 2 /'), 2)
       assert.equal(rpn('4 2 -'), 2)
     })
-  
   })
   

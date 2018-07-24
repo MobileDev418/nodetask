@@ -17,7 +17,7 @@ const writeFile = (path, content) => new Promise((resolve, reject) => {
     if (error) {
       reject(error);
     }
-    resolve('Success!!');
+    resolve();
   });
 });
 
@@ -25,7 +25,11 @@ const writeFile = (path, content) => new Promise((resolve, reject) => {
 
 const requests = urls.map(url => fetch(url).then(res => res.json()));
 
-Promise.all(requests)
-  .then(responses => responses.forEach(
-    (response, index) => { writeFile(files[index], JSON.stringify(response)); },
-  ));
+const scrap = function () {
+  Promise.all(requests)
+    .then(responses => responses.forEach(
+      (response, index) => { writeFile(files[index], JSON.stringify(response)); },
+    ));
+};
+
+scrap();
