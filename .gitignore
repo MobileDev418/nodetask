@@ -8,7 +8,7 @@ package-lock.json
 .serverless
 .webpack
 .DS_Store
-DataScrap/result1.txt
-DataScrap/result2.txt
-DataScrap/result3.txt
+DataScrap/btcusd.txt
+DataScrap/ethusd.txt
+DataScrap/neousd.txt
 
