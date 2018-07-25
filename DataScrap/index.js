@@ -7,10 +7,10 @@ const fetch = require('node-fetch');
 const urls = [
   'https://api.bitfinex.com/v1/trades/btcusd',
   'https://api.bitfinex.com/v1/trades/ethusd',
-  'https://api.bitfinex.com/v1/trades/btcusd',
+  'https://api.bitfinex.com/v1/trades/neousd',
 ];
 
-const files = ['result1.txt', 'result2.txt', 'result3.txt'];
+const files = ['btcusd.txt', 'ethusd.txt', 'neousd.txt'];
 
 const writeFile = (path, content) => new Promise((resolve, reject) => {
   fs.writeFile(path, content, 'utf8', (error) => {
