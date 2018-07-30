@@ -1,12 +1,16 @@
-var assert = require('assert')
-var resolvingPromise = require('../').default
+const assert = require('assert');
 
-describe('Scrap Test', function() {
+const resolvingPromise = new Promise((resolve) =>
+  resolve('promise resolved')
+);
+const rejectingPromise = new Promise((resolve, reject) =>
+  reject(new Error('promise rejected'))
+);
 
-    it('write datas', () => {
-        return resolvingPromise.then( (result) => {
-            expect(result).to.equal('promise resolved');
-        })
-    })
-  })
-  
+describe('Test Promiss', () => {
+  it('write datas', () => {
+    return resolvingPromise.then( (result) => {
+      expect(result).to.equal('promise resolved');
+    });
+  });
+});
